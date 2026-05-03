@@ -4,6 +4,8 @@ description: "Jailbreaks FYI covers offensive AI security from a working practit
 pubDate: 2026-05-03
 tags: ["meta"]
 category: "site"
+heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/featured/jailbreaks.fyi/welcome.png
+heroAlt: "What this site is for"
 ---
 
 Jailbreaks FYI exists to cover offensive AI security with the same rigor a working AI red teamer would expect — and the same honesty about what does and doesn't land in production.
