@@ -1,8 +1,4 @@
-/* Brand + visual variant for jailbreaks-fyi
- * cluster: offensive
- * variant: v1_centered_serif_magazine
- * Generated 2026-05-07. Higher specificity than globals.css cluster rules. */
-
+/* Brand for jailbreaks-fyi: cluster=offensive, variant=v1_centered_serif_magazine */
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Geist+Sans:wght@400;500;600;700&display=swap");
 
 body[data-cluster='offensive'] {
@@ -25,30 +21,4 @@ body[data-cluster='offensive'] {
 html.dark body[data-cluster='offensive'] {
   --bg: 9 9 11; --fg: 250 245 255; --surface: 19 16 26;
   --accent-500: 168 85 247; --accent-600: 168 85 247;
-}
-
-
-body[data-cluster='offensive'] {
-  --type-scale: 1.250;
-  --space-y: 1.5rem;
-}
-body[data-cluster='offensive'] h1 { font-size: calc(1rem * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale)); line-height: 1.05; }
-body[data-cluster='offensive'] h2 { font-size: calc(1rem * var(--type-scale) * var(--type-scale) * var(--type-scale)); line-height: 1.15; }
-body[data-cluster='offensive'] h3 { font-size: calc(1rem * var(--type-scale) * var(--type-scale)); line-height: 1.2; }
-body[data-cluster='offensive'] p { margin-block: var(--space-y); }
-
-
-/* Hero / header layout — variant: center */
-body[data-cluster='offensive'] .hero, body[data-cluster='offensive'] header.site-header { text-align: center; padding: 8rem 1rem; }
-
-/* Card style — variant: flat */
-body[data-cluster='offensive'] article { background: rgb(19 16 26); }
-
-/* Accent application — variant: underline */
-body[data-cluster='offensive'] a { text-decoration: underline; text-decoration-color: rgb(168 85 247); text-decoration-thickness: 2px; }
-
-/* Border radius — variant uses 0 */
-body[data-cluster='offensive'] article,
-body[data-cluster='offensive'] .card {
-  border-radius: 0;
 }
