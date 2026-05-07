@@ -14,7 +14,7 @@ sources:
     url: "https://github.com/agencyenterprise/PromptInject"
 schema:
   type: "TechArticle"
-heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/?prompt=tactical%20catalog%20pages%20noir%20dark%20with%20orange%20highlights&aspect=hero
+heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/featured/jailbreaks.fyi/jailbreak-technique-catalog-2026-q2.png
 heroAlt: "Jailbreak technique catalog visualization"
 ---
 
