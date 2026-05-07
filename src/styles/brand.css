@@ -1,43 +1,43 @@
-/* Brand override generated from shared/brand-books/jailbreaks-fyi.json
- * This makes jailbreaks-fyi visually distinct from sister sites in the same cluster.
- * Loaded after globals.css; overrides cluster defaults with brand-book values.
+/* Brand override for jailbreaks-fyi — cluster=offensive.
+ * Uses cluster-matching selector specificity (0,1,1) so this OVERRIDES the
+ * cluster defaults from globals.css, which use the same selector specificity.
+ * Source order wins; brand.css is imported after globals.css in BaseLayout.
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Geist+Sans:wght@400;500;600;700&display=swap");
 
-:root {
+body[data-cluster="offensive"] {
   --bg: 9 9 11;
   --fg: 250 245 255;
   --surface: 19 16 26;
+  --muted: 9 9 11;
   --muted-fg: 126 34 206;
-
-  --brand-accent-rgb: 168 85 247;
+  --border: 126 34 206;
 
   --font-display: "Geist Mono", system-ui, sans-serif;
   --font-body: "Geist Sans", system-ui, sans-serif;
 
+  /* Override the accent ramp midpoints with brand accent.
+   * The 400-700 range is what most components use. */
+  --accent-400: 168 85 247;
+  --accent-500: 168 85 247;
+  --accent-600: 168 85 247;
+  --accent-700: 168 85 247;
+
+  /* Brand metadata */
   --brand-tone: "neon-subversive";
+  --brand-accent-rgb: 168 85 247;
 }
 
-body[data-cluster] {
-  background: rgb(var(--bg));
-  color: rgb(var(--fg));
-  font-family: var(--font-body);
-}
-
-body[data-cluster] h1, body[data-cluster] h2, body[data-cluster] h3,
-body[data-cluster] .display {
-  font-family: var(--font-display);
-}
-
-/* Override accent ramp midpoint with brand accent */
-body[data-cluster] {
-  --accent-500: var(--brand-accent-rgb);
-  --accent-600: var(--brand-accent-rgb);
-}
-
-/* Surface treatment per tone */
-body[data-cluster] .card,
-body[data-cluster] article {
-  background: rgb(var(--surface));
+/* Same in dark mode (most brand books are dark-tone already) */
+html.dark body[data-cluster="offensive"] {
+  --bg: 9 9 11;
+  --fg: 250 245 255;
+  --surface: 19 16 26;
+  --muted: 9 9 11;
+  --muted-fg: 126 34 206;
+  --accent-400: 168 85 247;
+  --accent-500: 168 85 247;
+  --accent-600: 168 85 247;
+  --accent-700: 168 85 247;
 }
