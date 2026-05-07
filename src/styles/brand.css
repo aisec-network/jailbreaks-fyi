@@ -1,0 +1,43 @@
+/* Brand override generated from shared/brand-books/jailbreaks-fyi.json
+ * This makes jailbreaks-fyi visually distinct from sister sites in the same cluster.
+ * Loaded after globals.css; overrides cluster defaults with brand-book values.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Geist+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg: 9 9 11;
+  --fg: 250 245 255;
+  --surface: 19 16 26;
+  --muted-fg: 126 34 206;
+
+  --brand-accent-rgb: 168 85 247;
+
+  --font-display: "Geist Mono", system-ui, sans-serif;
+  --font-body: "Geist Sans", system-ui, sans-serif;
+
+  --brand-tone: "neon-subversive";
+}
+
+body[data-cluster] {
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+  font-family: var(--font-body);
+}
+
+body[data-cluster] h1, body[data-cluster] h2, body[data-cluster] h3,
+body[data-cluster] .display {
+  font-family: var(--font-display);
+}
+
+/* Override accent ramp midpoint with brand accent */
+body[data-cluster] {
+  --accent-500: var(--brand-accent-rgb);
+  --accent-600: var(--brand-accent-rgb);
+}
+
+/* Surface treatment per tone */
+body[data-cluster] .card,
+body[data-cluster] article {
+  background: rgb(var(--surface));
+}

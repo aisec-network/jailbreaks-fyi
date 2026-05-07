@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a855f7" stop-opacity="0" />
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0.18" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#09090b" />
+  <rect x="80" y="540" width="120" height="6" fill="#a855f7" />
+  
+  <g transform="translate(80, 200)">
+    <text font-family="Geist Mono, system-ui, sans-serif" font-size="78" font-weight="700" fill="#faf5ff" letter-spacing="-2">
+      Jailbreaks FYI
+    </text>
+    <text y="120" font-family="Geist Sans, system-ui, sans-serif" font-size="32" fill="#7e22ce" letter-spacing="0">
+      What the models don't want you to know.
+    </text>
+    <text y="280" font-family="Geist Sans, monospace" font-size="22" fill="#a855f7" letter-spacing="2" text-transform="uppercase">
+      jailbreaks.fyi
+    </text>
+  </g>
+</svg>
