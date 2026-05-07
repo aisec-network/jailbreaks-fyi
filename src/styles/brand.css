@@ -1,43 +1,54 @@
-/* Brand override for jailbreaks-fyi — cluster=offensive.
- * Uses cluster-matching selector specificity (0,1,1) so this OVERRIDES the
- * cluster defaults from globals.css, which use the same selector specificity.
- * Source order wins; brand.css is imported after globals.css in BaseLayout.
- */
+/* Brand + visual variant for jailbreaks-fyi
+ * cluster: offensive
+ * variant: v1_centered_serif_magazine
+ * Generated 2026-05-07. Higher specificity than globals.css cluster rules. */
 
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Geist+Sans:wght@400;500;600;700&display=swap");
 
-body[data-cluster="offensive"] {
+body[data-cluster='offensive'] {
   --bg: 9 9 11;
   --fg: 250 245 255;
   --surface: 19 16 26;
   --muted: 9 9 11;
   --muted-fg: 126 34 206;
   --border: 126 34 206;
-
   --font-display: "Geist Mono", system-ui, sans-serif;
   --font-body: "Geist Sans", system-ui, sans-serif;
-
-  /* Override the accent ramp midpoints with brand accent.
-   * The 400-700 range is what most components use. */
   --accent-400: 168 85 247;
   --accent-500: 168 85 247;
   --accent-600: 168 85 247;
   --accent-700: 168 85 247;
-
-  /* Brand metadata */
   --brand-tone: "neon-subversive";
   --brand-accent-rgb: 168 85 247;
+  --brand-variant: "v1_centered_serif_magazine";
+}
+html.dark body[data-cluster='offensive'] {
+  --bg: 9 9 11; --fg: 250 245 255; --surface: 19 16 26;
+  --accent-500: 168 85 247; --accent-600: 168 85 247;
 }
 
-/* Same in dark mode (most brand books are dark-tone already) */
-html.dark body[data-cluster="offensive"] {
-  --bg: 9 9 11;
-  --fg: 250 245 255;
-  --surface: 19 16 26;
-  --muted: 9 9 11;
-  --muted-fg: 126 34 206;
-  --accent-400: 168 85 247;
-  --accent-500: 168 85 247;
-  --accent-600: 168 85 247;
-  --accent-700: 168 85 247;
+
+body[data-cluster='offensive'] {
+  --type-scale: 1.250;
+  --space-y: 1.5rem;
+}
+body[data-cluster='offensive'] h1 { font-size: calc(1rem * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale)); line-height: 1.05; }
+body[data-cluster='offensive'] h2 { font-size: calc(1rem * var(--type-scale) * var(--type-scale) * var(--type-scale)); line-height: 1.15; }
+body[data-cluster='offensive'] h3 { font-size: calc(1rem * var(--type-scale) * var(--type-scale)); line-height: 1.2; }
+body[data-cluster='offensive'] p { margin-block: var(--space-y); }
+
+
+/* Hero / header layout — variant: center */
+body[data-cluster='offensive'] .hero, body[data-cluster='offensive'] header.site-header { text-align: center; padding: 8rem 1rem; }
+
+/* Card style — variant: flat */
+body[data-cluster='offensive'] article { background: rgb(19 16 26); }
+
+/* Accent application — variant: underline */
+body[data-cluster='offensive'] a { text-decoration: underline; text-decoration-color: rgb(168 85 247); text-decoration-thickness: 2px; }
+
+/* Border radius — variant uses 0 */
+body[data-cluster='offensive'] article,
+body[data-cluster='offensive'] .card {
+  border-radius: 0;
 }
