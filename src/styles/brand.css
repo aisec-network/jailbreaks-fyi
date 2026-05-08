@@ -11,7 +11,7 @@ body[data-cluster] {
   --font-display: Newsreader, "Iowan Old Style", Georgia, serif;
   --font-body: "IBM Plex Sans", "Helvetica Neue", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
-  --brand-accent-rgb: 199 124 26;
+  --brand-accent-rgb: 0 0 0;
   --brand-identity-font: "f11_serif_newsreader_plex";
   --brand-identity-palette: "p24_h34_zinc";
   --brand-identity-layout: "longform";
@@ -26,7 +26,7 @@ html.dark body[data-cluster] {
   --border: 63 63 70;
   --surface: 24 24 27;
   --surface-alt: 39 39 42;
-  --brand-accent-rgb: 241 174 85;
+  --brand-accent-rgb: 255 255 255;
 }
 
 /* Density modifiers */
