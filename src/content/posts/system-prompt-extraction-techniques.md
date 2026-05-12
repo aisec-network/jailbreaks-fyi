@@ -62,7 +62,7 @@ The honest take: these guardrails reduce the floor of extraction skill required 
 
 If your business model requires the system prompt to stay confidential, the architecture has to change. Approaches that work:
 
-**Don't put the IP in the system prompt.** Put the IP in retrieval (where you can audit access), in tool implementations (where you can rate-limit), or in fine-tuning (where extraction is much harder, though not impossible — see the training data extraction literature). What's in the system prompt should be the public-facing behavior contract, not the proprietary logic.
+**Don't put the IP in the system prompt.** Put the IP in retrieval (where you can audit access), in tool implementations (where you can rate-limit), or in fine-tuning (where extraction is much harder, though not impossible — see the [training data extraction](https://adversarialml.dev/) literature). What's in the system prompt should be the public-facing behavior contract, not the proprietary logic.
 
 **Two-tier prompting.** Use a small model or a separate API call to classify the user's intent. The big model only sees the user's *question*, not the routing logic or business policies. Each tier's "system prompt" is generic; the proprietary logic is in the orchestration.
 

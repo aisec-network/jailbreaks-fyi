@@ -119,3 +119,5 @@ We update this catalog quarterly. The class taxonomy is stable; the within-class
 ## What we don't publish
 
 Working strings for active classes. The ethics line is consistent — we describe the technique enough for defenders to test against, we don't hand attackers ready-to-use payloads. The attackers can find their own; this catalog isn't for them.
+
+For more context, [AI attack techniques](https://aiattacks.dev/) covers related topics in depth.

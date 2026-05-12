@@ -125,3 +125,8 @@ Concretely, here's what a useful kickoff looks like:
 Everything else is implementation. Engagements that go badly almost always trace back to skipping one of these steps in the first 90 minutes. Engagements that land — that change a decision and produce work the customer acts on — are the ones where the scoping was actually done.
 
 The attacks are the easy part. The conversation that decides which attacks to run, against what, and how to communicate the result — that's the part that takes practice and that distinguishes a useful engagement from a billed one.
+
+## See also
+
+- [adversarial ML research](https://adversarialml.dev/)
+- [AI attack techniques](https://aiattacks.dev/)

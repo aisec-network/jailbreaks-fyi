@@ -20,7 +20,7 @@ heroAlt: "LLM agent fanning out tool calls with an attacker-controlled document 
 
 A chat-only LLM with a leaked system prompt is an embarrassment. An agent with tool access and a leaked system prompt is an incident. This is what changed when the industry stopped shipping chatbots and started shipping agents that can read your email, write to your calendar, and execute code.
 
-The agent threat model is a superset of the chat-LLM threat model, and the addition is the thing that matters. Every indirect prompt injection vector in a RAG-style chat bot is still present in an agent. On top of those, the agent has tools — and tools are how the attacker turns "the model produced a weird response" into "the model just sent your customer list to an external email."
+The agent threat model is a superset of the chat-LLM threat model, and the addition is the thing that matters. Every indirect [prompt injection](https://promptinjection.report/) vector in a RAG-style chat bot is still present in an agent. On top of those, the agent has tools — and tools are how the attacker turns "the model produced a weird response" into "the model just sent your customer list to an external email."
 
 This is a practitioner's catalog of the exploit classes that have already landed against production agents in the wild and the containment patterns that bound the damage.
 
@@ -79,3 +79,5 @@ Indirect prompt injection in agents is the active frontier of LLM red-teaming be
 The honest position for a defender shipping an agent in 2026: assume injection will land. Design the action space and the approval surface so that "the model decided to do X because attacker-controlled text told it to" is a containable incident, not a catastrophic one.
 
 For the chat-style version of the same problem, see [prompt injection via retrieved documents](/posts/rag-prompt-injection-attack-surface/). For the active catalog of jailbreak techniques the agent's underlying model has to resist, see the [Q2 2026 technique catalog](/posts/jailbreak-technique-catalog-2026-q2/).
+
+For more context, [adversarial ML research](https://adversarialml.dev/) covers related topics in depth.

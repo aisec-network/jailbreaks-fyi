@@ -107,4 +107,6 @@ The defender's win in 2026 is not in hiding the architecture. It's in ensuring t
 
 ## What this means for attackers (in authorized engagements)
 
-Spend the first hour fingerprinting. It is the single highest-ROI thing you can do on an LLM engagement. Every subsequent attack — prompt injection variant selection, jailbreak template choice, tooling target — has a better hit rate when you know what you're shooting at. Skipping this step is how you waste two days on GCG suffixes that were never going to transfer.
+Spend the first hour fingerprinting. It is the single highest-ROI thing you can do on an LLM engagement. Every subsequent attack — [prompt injection](https://promptinjection.report/) variant selection, jailbreak template choice, tooling target — has a better hit rate when you know what you're shooting at. Skipping this step is how you waste two days on GCG suffixes that were never going to transfer.
+
+For more context, [adversarial ML research](https://adversarialml.dev/) covers related topics in depth.

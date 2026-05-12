@@ -76,3 +76,5 @@ RAG injection is not a new attack. It's an old architectural problem amplified b
 The defender's realistic goal is to keep the blast radius bounded: assume injection will land sometimes, contain what it can do when it does, and make exfiltration paths expensive. For the broader prompt-injection landscape across deployment patterns, the [Prompt Injection Report](https://promptinjection.report) tracks ongoing public incidents and PoCs.
 
 For agent-specific failures where the RAG content drives tool use, see [indirect prompt injection in LLM agents](/posts/indirect-prompt-injection-llm-agents/). For the encoding-class lessons that generalize to obfuscated RAG payloads, see the [ArtPrompt post-mortem](/posts/artprompt-ascii-art-bypass-postmortem/).
+
+For more context, [adversarial ML research](https://adversarialml.dev/) covers related topics in depth.

@@ -35,7 +35,7 @@ It helps to split multimodal attacks by goal:
 
 Both are live in 2026. Both have working defender mitigations that are not widely deployed.
 
-## In-band: typographic and visual prompt injection
+## In-band: typographic and visual [prompt injection](https://promptinjection.report/)
 
 The most reliable attack in the entire multimodal threat model is the most boring: write instructions on the image.
 
@@ -108,3 +108,5 @@ The honest answer is that multimodal safety in 2026 is roughly where text safety
 - Strip or sanitize features that are weakly motivated (rendered text in user-submitted images for non-OCR-purpose flows; inaudible-frequency content in user audio).
 
 The wrapper-and-classifier strategy that has worked for the text channel will work here too. It just needs to be built and run.
+
+For more context, [adversarial ML research](https://adversarialml.dev/) covers related topics in depth.

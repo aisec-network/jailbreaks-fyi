@@ -24,7 +24,7 @@ This is a practitioner review based on running Garak across a portfolio of produ
 
 ## What Garak is
 
-Garak is a probe-based scanner. It runs a library of canned attack templates ("probes") against a target LLM endpoint, parses the responses with detectors, and reports which probes scored as hits. The probe library covers most named jailbreak families — DAN variants, encoding attacks, prompt injection patterns, leakage probes, refusal-bypass templates — plus generic functional checks for things like profanity output, PII leakage, and known-CVE-style behaviors.
+Garak is a probe-based scanner. It runs a library of canned attack templates ("probes") against a target LLM endpoint, parses the responses with detectors, and reports which probes scored as hits. The probe library covers most named jailbreak families — DAN variants, encoding attacks, [prompt injection](https://promptinjection.report/) patterns, leakage probes, refusal-bypass templates — plus generic functional checks for things like profanity output, PII leakage, and known-CVE-style behaviors.
 
 Architecturally it's a pytest for LLM-side vulns. Probes are plugins. Detectors are plugins. Reports are JUnit-style XML plus an HTML summary. This shape is exactly right; it's the part that's held up best as the LLM-security space has churned.
 
@@ -69,3 +69,5 @@ Garak is the right tool for one specific job: "does this model resist the named,
 For the broader landscape — what's actually landing in production, where the open research is, what attack classes Garak doesn't cover — see our [Q2 2026 technique catalog](/posts/jailbreak-technique-catalog-2026-q2/) and the [framework comparison post](/posts/pair-gcg-tap-framework-comparison/) for the optimizer-driven attack frameworks (which Garak does not implement).
 
 Garak is a baseline. Keep using it. Don't ship without doing the rest.
+
+For more context, [adversarial ML research](https://adversarialml.dev/) covers related topics in depth.

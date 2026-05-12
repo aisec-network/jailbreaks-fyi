@@ -76,3 +76,5 @@ ArtPrompt itself is mostly historical against frontier models. Encoding-class ja
 For the active catalog of what's still working, see our [Q2 2026 technique catalog](/posts/jailbreak-technique-catalog-2026-q2/). For the broader prompt-injection landscape, the canonical reference is [Prompt Injection Report](https://promptinjection.report).
 
 What we don't publish: working ArtPrompt-style strings or current variants. The class is defensible; we describe enough for defenders to build a test corpus and we don't hand attackers ready-made artifacts.
+
+For more context, [adversarial ML research](https://adversarialml.dev/) covers related topics in depth.

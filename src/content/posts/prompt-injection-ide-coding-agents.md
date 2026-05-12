@@ -117,3 +117,8 @@ Three habits:
 3. **Audit tool-use confirmations.** When the agent asks to run a command, read it. Reflexive confirmation defeats the only line of defense the agents are currently shipping.
 
 The IDE-agent threat model is not theoretical. The PoCs are public, the techniques are reproducible, and the patch surface is the developer's actual machine. Treat it accordingly.
+
+## See also
+
+- [adversarial ML research](https://adversarialml.dev/)
+- [AI attack techniques](https://aiattacks.dev/)
