@@ -74,7 +74,7 @@ Frame the request as fictional. "Write a story where a character explains how to
 
 Optimization-based: find a suffix string that triggers the model. Output looks like garbled tokens; works reliably.
 
-**Status 2026 Q2**: ACTIVE. The cost has dropped (see our [GCG primer](https://adversarialml.dev/gcg-class-adversarial-suffix-2026/)) such that solo practitioners can run them on consumer hardware. Frontier-model resistance has improved via targeted alignment training; not solved.
+**Status 2026 Q2**: ACTIVE. The cost has dropped (see our [GCG primer](https://adversarialml.dev/posts/gcg-class-adversarial-suffix-2026/)) such that solo practitioners can run them on consumer hardware. Frontier-model resistance has improved via targeted alignment training; not solved.
 
 **Mitigation**: perplexity-based input filtering (catches obvious cases), output-side classification, capability scoping. None individually sufficient.
 
